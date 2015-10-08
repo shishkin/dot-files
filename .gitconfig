@@ -9,3 +9,5 @@
   default = current
 [core]
   excludesfile = /Users/serega/.gitignore
+[pull]
+	rebase = true
