@@ -11,3 +11,5 @@
   excludesfile = /Users/serega/.gitignore
 [pull]
 	rebase = true
+[rebase]
+	autoStash = true
