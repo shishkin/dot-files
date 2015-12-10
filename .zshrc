@@ -11,11 +11,9 @@ export PATH=$HOME/bin:$JAVA_HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bi
 
 export LANG=en_US.UTF-8
 export EDITOR="emacsclient -nw"
+export ALTERNATE_EDITOR=vi
 
 # Aliases
-alias ll='ls -la'
+alias e=$EDITOR
 alias gs='git status'
 alias ga='git add -A'
-
-alias e=$EDITOR
-

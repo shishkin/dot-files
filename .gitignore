@@ -1,7 +1,14 @@
+.DS_Store
+
 .idea/
 *.iml
 
 .classpath
 .project
 .settings/
+
+*.sc
+
+.ensime
+.ensime_cache/
 
