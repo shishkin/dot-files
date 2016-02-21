@@ -32,6 +32,8 @@ values."
      org
      osx
      scala
+     haskell
+     javascript
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
@@ -197,13 +199,17 @@ values."
   "Initialization function for user code.
 It is called immediately after `dotspacemacs/init'.  You are free to put any
 user code."
-  )
+  (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+  (add-to-list 'exec-path "~/.local/bin/"))
 
 (defun dotspacemacs/user-config ()
   "Configuration function for user code.
  This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
   (global-linum-mode)
+  (setq tab-width 2)
+  (setq-default js2-basic-offset 2)
+  (setq-default js-indent-level 2)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
