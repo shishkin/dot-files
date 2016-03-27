@@ -15,3 +15,8 @@ brew cask install \
   firefox \
   dropbox \
   java
+
+brew tap caskroom/fonts
+
+brew cask install \
+  font-dejavu-sans-mono-for-powerline
