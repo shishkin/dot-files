@@ -27,6 +27,18 @@ defaults write com.apple.dock autohide -bool true
 # Make dock tiles smaller
 defaults write com.apple.dock tilesize -int 48
 
-for app in "Dock" "Finder"; do
+# Menu bar clock format
+defaults write com.apple.menuextra.clock DateFormat -string "EEE HH:mm"
+
+# Disable sound effects
+defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -int 0
+
+# Show volume in menu bar
+open '/System/Library/CoreServices/Menu Extras/Volume.menu'
+
+# Use F1.. keys without Fn key
+defaults write -g com.apple.keyboard.fnState -bool true
+
+for app in "Dock" "Finder" "SystemUIServer"; do
     killall "${app}"
 done
