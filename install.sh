@@ -17,6 +17,10 @@ brew cask install \
   java
 
 brew tap caskroom/fonts
+brew tap colindean/fonts-nonfree
 
 brew cask install \
-  font-dejavu-sans-mono-for-powerline
+  font-dejavu-sans-mono-for-powerline \
+  font-open-sans \
+  font-microsoft-office
+
