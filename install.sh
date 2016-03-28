@@ -7,13 +7,12 @@ brew install \
   zsh \
   tmux \
   git \
+  vim \
   coreutils \
   wget
 
 brew cask install \
   iterm2 \
-  firefox \
-  dropbox \
   java
 
 brew tap caskroom/fonts
