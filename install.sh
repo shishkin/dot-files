@@ -13,6 +13,7 @@ brew install \
 
 brew cask install \
   iterm2 \
+  flux \
   java
 
 brew tap caskroom/fonts
