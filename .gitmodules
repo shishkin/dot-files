@@ -1,3 +1,6 @@
 [submodule "home/.vim/bundle/vundle"]
 	path = home/.vim/bundle/vundle
 	url = https://github.com/gmarik/vundle.git
+[submodule "home/.emacs.d"]
+	path = home/.emacs.d
+	url = https://github.com/syl20bnr/spacemacs

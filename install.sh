@@ -11,6 +11,10 @@ brew install \
   coreutils \
   wget
 
+brew tap railwaycat/homebrew-emacsmacport
+brew install emacs-mac --with-spacemacs-icon
+brew linkapps
+
 brew cask install \
   iterm2 \
   flux \
