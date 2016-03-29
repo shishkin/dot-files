@@ -11,6 +11,8 @@ brew install \
   coreutils \
   wget
 
+chsh -s $(which zsh)
+
 brew tap railwaycat/homebrew-emacsmacport
 brew install emacs-mac --with-spacemacs-icon
 brew linkapps
