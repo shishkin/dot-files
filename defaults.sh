@@ -52,6 +52,9 @@ open '/System/Library/CoreServices/Menu Extras/Volume.menu'
 # Use F1.. keys without Fn key
 defaults write -g com.apple.keyboard.fnState -bool true
 
+# Disable autocorrect
+defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
+
 for app in "Dock" "Finder" "SystemUIServer"; do
     killall "${app}"
 done
