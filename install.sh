@@ -37,3 +37,7 @@ brew cask install \
   font-open-sans \
   font-microsoft-office
 
+set +x
+sdk install sbt
+set -x
+
