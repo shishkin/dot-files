@@ -33,6 +33,7 @@ values."
      osx
      scala
      haskell
+     elm
      javascript
      ;; (shell :variables
      ;;        shell-default-height 30
