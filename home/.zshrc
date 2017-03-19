@@ -15,7 +15,7 @@ export ALTERNATE_EDITOR=vi
 
 # Aliases
 alias e=$EDITOR
-alias gs='git status'
+alias gs='git status -s'
 alias ga='git add -A'
 alias gfm='git fetch origin master:master'
 

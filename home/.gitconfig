@@ -9,7 +9,14 @@
   default = current
 [core]
   excludesfile = /Users/serega/.gitignore
+	autocrlf = input
+  pager = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
 [pull]
 	rebase = true
 [rebase]
 	autoStash = true
+	instructionFormat = (%an <%ae>) %s
+[diff]
+	compactionHeuristic = true
+	indentHeuristic = true
+
