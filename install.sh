@@ -26,7 +26,10 @@ brew linkapps
 
 brew cask install \
   iterm2 \
+  google-chrome \
   flux \
+  quicksilver \
+  spactacle \
   java
 
 brew tap caskroom/fonts
@@ -34,6 +37,7 @@ brew tap colindean/fonts-nonfree
 
 brew cask install \
   font-dejavu-sans-mono-for-powerline \
+  font-source-code-pro \
   font-open-sans \
   font-microsoft-office
 
