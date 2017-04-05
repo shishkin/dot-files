@@ -4,12 +4,6 @@ sudo -v
 
 command -v brew >/dev/null 2>&1 || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-set +x
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && \
-  source "$HOME/.sdkman/bin/sdkman-init.sh"
-set -x
-command -v sdk >/dev/null 2>&1 || curl -s http://get.sdkman.io | bash
-
 brew install \
   zsh \
   tmux \
@@ -40,8 +34,4 @@ brew cask install \
   font-source-code-pro \
   font-open-sans \
   font-microsoft-office
-
-set +x
-sdk install sbt
-set -x
 
