@@ -25,7 +25,7 @@ defaults write com.apple.dock showhidden -bool true
 defaults write com.apple.dock autohide-delay -float 0
 
 # Only show active apps in dock
-defaults write com.apple.dock static-only -bool true
+#defaults write com.apple.dock static-only -bool true
 
 # Put dock on the left side
 defaults write com.apple.Dock orientation -string left
