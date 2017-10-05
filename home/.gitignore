@@ -7,8 +7,6 @@
 .project
 .settings/
 
-*.sc
-
 .ensime
 .ensime_cache/
 TAGS
