@@ -17,8 +17,6 @@ curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
 
 sudo chsh -s $(which zsh) $USER
 
-brew tap railwaycat/homebrew-emacsmacport
-brew install emacs-mac --with-spacemacs-icon
 brew linkapps
 
 brew cask install \
