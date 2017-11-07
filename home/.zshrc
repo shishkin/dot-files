@@ -11,7 +11,7 @@ export PATH=$HOME/.cargo/bin:/usr/local/Library/LinkedKegs/git/share/git-core/co
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-export EDITOR="emacsclient -nw"
+export EDITOR="nvim"
 export ALTERNATE_EDITOR=vi
 
 # Aliases
