@@ -13,7 +13,7 @@ brew install \
   wget
 
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
-	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 sudo chsh -s $(which zsh) $USER
 
@@ -32,6 +32,7 @@ brew tap colindean/fonts-nonfree
 
 brew cask install \
   font-dejavu-sans-mono-for-powerline \
+  font-fira-code \
   font-source-code-pro \
   font-open-sans \
   font-microsoft-office
