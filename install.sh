@@ -24,7 +24,7 @@ brew cask install \
   google-chrome \
   flux \
   quicksilver \
-  spactacle \
+  spectacle \
   java
 
 brew tap caskroom/fonts
