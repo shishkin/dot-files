@@ -8,9 +8,12 @@ brew install \
   zsh \
   tmux \
   git \
-  vim \
+  neovim \
   coreutils \
   wget
+
+curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
+	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 sudo chsh -s $(which zsh) $USER
 
