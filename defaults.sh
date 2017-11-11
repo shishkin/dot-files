@@ -38,9 +38,10 @@ defaults write com.apple.dock wvous-br-corner -int 5
 defaults write com.apple.dock wvous-br-modifier -int 0
 
 # Menu bar clock format
-defaults write com.apple.menuextra.clock DateFormat -string "EEE HH:mm"
+defaults write com.apple.menuextra.clock DateFormat -string "EEE MMM d HH:mm"
 
 # Disable sound effects
+defaults write -g com.apple.sound.beep.feedback -int 0
 defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -int 0
 
 # Show volume in menu bar
@@ -52,6 +53,9 @@ defaults write -g com.apple.keyboard.fnState -bool true
 # Disable autocorrect
 defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
 
+#Tap to click
+defaults -currentHost write -globalDomain com.apple.mouse.tapBehavior -int 1
+
 for app in "Dock" "Finder" "SystemUIServer"; do
-    killall "${app}"
+    killall -HUP "${app}"
 done
