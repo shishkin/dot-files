@@ -3,6 +3,8 @@ call plug#begin()
 Plug 'altercation/vim-colors-solarized'
 Plug 'vim-airline/vim-airline-themes'
 
+Plug '/usr/local/opt/fzf'
+
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'hecal3/vim-leader-guide'
 

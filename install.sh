@@ -10,6 +10,8 @@ brew install \
   git \
   neovim \
   coreutils \
+  fzf \
+  ripgrep \
   wget
 
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \

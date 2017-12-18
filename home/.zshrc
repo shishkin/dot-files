@@ -20,3 +20,7 @@ alias gs='git status -s'
 alias ga='git add -A'
 alias gfm='git fetch origin master:master'
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git/*"'
+
