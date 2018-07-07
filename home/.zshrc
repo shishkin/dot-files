@@ -2,7 +2,9 @@ DEFAULT_USER="serega"
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="agnoster"
 
-plugins=(git osx brew brew-cask autojump docker)
+source $(brew --prefix nvm)/nvm.sh
+
+plugins=(git osx brew brew-cask autojump docker nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -19,6 +21,7 @@ alias e=$EDITOR
 alias gs='git status -s'
 alias ga='git add -A'
 alias gfm='git fetch origin master:master'
+alias gfd='git fetch origin develop:develop'
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
