@@ -2,9 +2,10 @@ DEFAULT_USER="serega"
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="agnoster"
 
+export NVM_DIR=$HOME/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
-plugins=(git osx brew brew-cask autojump docker nvm)
+plugins=(git osx brew brew-cask autojump docker)
 
 source $ZSH/oh-my-zsh.sh
 
