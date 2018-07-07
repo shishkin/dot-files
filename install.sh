@@ -21,8 +21,6 @@ curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
 
 sudo chsh -s $(which zsh) $USER
 
-brew linkapps
-
 brew cask install \
   iterm2 \
   google-chrome \
