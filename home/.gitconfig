@@ -9,14 +9,20 @@
   default = current
 [core]
   excludesfile = /Users/serega/.gitignore
-	autocrlf = input
+  autocrlf = input
   pager = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
 [pull]
-	rebase = true
+  rebase = true
 [rebase]
-	autoStash = true
-	instructionFormat = (%an <%ae>) %s
+  autoStash = true
+  instructionFormat = (%an <%ae>) %s
 [diff]
-	compactionHeuristic = true
-	indentHeuristic = true
+  compactionHeuristic = true
+  indentHeuristic = true
+[diff "ansible-vault"]
+  textconv = ansible-vault view
+  cachetextconv = false
+[merge "ansible-vault"]
+  name = ansible-vault merge driver
+  driver = /usr/local/bin/ansible-vault-merge -- %O %A %B %P
 
