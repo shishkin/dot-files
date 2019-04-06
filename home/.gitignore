@@ -11,3 +11,9 @@
 .ensime_cache/
 TAGS
 
+.bloop/
+.metals/
+
+.cache/
+.sonarlint/
+

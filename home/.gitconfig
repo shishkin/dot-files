@@ -5,14 +5,16 @@
   email = sergei.shishkin@gmail.com
 [alias]
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset\n' --abbrev-commit --date=relative --all
-[push]
-  default = current
 [core]
   excludesfile = /Users/serega/.gitignore
   autocrlf = input
   pager = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
+[fetch]
+  prune = true
 [pull]
   rebase = true
+[push]
+  default = current
 [rebase]
   autoStash = true
   instructionFormat = (%an <%ae>) %s
@@ -26,3 +28,5 @@
   name = ansible-vault merge driver
   driver = /usr/local/bin/ansible-vault-merge -- %O %A %B %P
 
+[submodule]
+	recurse = true

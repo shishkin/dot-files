@@ -12,8 +12,14 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'vim-airline/vim-airline'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 Plug 'elmcast/elm-vim', { 'for': 'elm' }
+
+Plug 'autozimu/LanguageClient-neovim', {
+  \ 'branch': 'next',
+  \ 'do': './install.sh'
+  \ }
 
 call plug#end()
 
@@ -42,5 +48,16 @@ let NERDTreeShowHidden = 1
 let g:mapleader = ' '
 nnoremap <leader> :<C-U>LeaderGuide ' '<CR>
 
+let g:deoplete#enable_at_startup = 1
+
 let g:elm_format_autosave = 1
+
+let g:LanguageClient_serverCommands = {
+  \ 'javascript': ['javascript-typescript-stdio'],
+  \ }
+
+nnoremap <silent> lc :call LanguageClient_contextMenu()<CR>
+nnoremap <silent> lh :call LanguageClient_textDocument_hover()<CR>
+nnoremap <silent> ld :call LanguageClient_textDocument_definition()<CR>
+nnoremap <silent> lr :call LanguageClient_textDocument_rename()<CR>
 
