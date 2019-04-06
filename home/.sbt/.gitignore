@@ -1,0 +1,6 @@
+target/
+staging/
+preloaded/
+boot/
+templates/
+zinc/
