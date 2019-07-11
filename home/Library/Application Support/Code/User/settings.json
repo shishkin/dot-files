@@ -1,0 +1,28 @@
+{
+    "workbench.colorTheme": "Solarized Light",
+    "workbench.startupEditor": "none",
+    "editor.suggestSelection": "first",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.rendererType": "canvas",
+    "workbench.activityBar.visible": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": true,
+    "explorer.confirmDragAndDrop": false,
+    "window.restoreWindows": "none",
+    "editor.wordWrap": "on",
+    "metals.millScript": "/Users/serega/bin/mill",
+    "metals.serverVersion": "",
+    "extensions.ignoreRecommendations": false
+}
