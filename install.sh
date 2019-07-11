@@ -24,12 +24,12 @@ sudo chsh -s $(which zsh) $USER
 brew cask install \
   iterm2 \
   google-chrome \
+  firefox \
   flux \
   quicksilver \
   spectacle \
   java
 
-brew tap caskroom/fonts
 brew tap colindean/fonts-nonfree
 
 brew cask install \
