@@ -4,12 +4,12 @@ ZSH_THEME="agnoster"
 
 export NVM_DIR=$HOME/.nvm
 
-plugins=(git osx brew brew-cask autojump docker)
+plugins=(git osx brew autojump docker)
 
 source $ZSH/oh-my-zsh.sh
 
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
-export PATH=$HOME/.nvm/versions/node/v8.14.0/bin:$HOME/.dotnet/tools:$HOME/.cargo/bin:/usr/local/Library/LinkedKegs/git/share/git-core/contrib/diff-highlight:$JAVA_HOME/bin:$HOME/anaconda/bin:$HOME/.local/bin:$HOME/bin:/usr/local/bin:/usr/X11/bin:$PATH
+export PATH=$HOME/.nvm/versions/node/v8.14.0/bin:$HOME/.dotnet/tools:$HOME/.cargo/bin:/usr/local/Library/LinkedKegs/git/share/git-core/contrib/diff-highlight:$JAVA_HOME/bin:/usr/local/anaconda3/bin:$HOME/.local/bin:$HOME/bin:/usr/local/bin:/usr/X11/bin:$PATH
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
