@@ -5,6 +5,7 @@ sudo -v
 command -v brew >/dev/null 2>&1 || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew install \
+  python3 \
   zsh \
   tmux \
   git \
@@ -12,6 +13,7 @@ brew install \
   coreutils \
   fzf \
   ripgrep \
+  autojump \
   wget
 
 pip3 install neovim
@@ -30,12 +32,9 @@ brew cask install \
   spectacle \
   java
 
-brew tap colindean/fonts-nonfree
-
 brew cask install \
-  font-dejavu-sans-mono-for-powerline \
-  font-fira-code \
-  font-source-code-pro \
-  font-open-sans \
-  font-microsoft-office
+  homebrew/cask-fonts/font-fira-code \
+  homebrew/cask-fonts/font-source-code-pro \
+  homebrew/cask-fonts/font-open-sans \
+  colindean/fonts-nonfree/font-microsoft-office
 
