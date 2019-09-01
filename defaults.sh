@@ -26,12 +26,22 @@ defaults write com.apple.dock wvous-br-modifier -int 0
 # Menu bar clock format
 defaults write com.apple.menuextra.clock DateFormat -string "EEE MMM d HH:mm"
 
+# Menu bar icons
+defaults write com.apple.systemuiserver menuExtras -array \
+  "/System/Library/CoreServices/Menu Extras/Clock.menu" \
+  "/System/Library/CoreServices/Menu Extras/Battery.menu" \
+  "/System/Library/CoreServices/Menu Extras/AirPort.menu" \
+  "/System/Library/CoreServices/Menu Extras/TextInput.menu" \
+  "/System/Library/CoreServices/Menu Extras/Volume.menu" \
+  "/System/Library/CoreServices/Menu Extras/Displays.menu"
+
 # Disable sound effects
 defaults write -g com.apple.sound.beep.feedback -int 0
 defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -int 0
 
-# Show volume in menu bar
-open '/System/Library/CoreServices/Menu Extras/Volume.menu'
+# Screensaver
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Use F1.. keys without Fn key
 defaults write -g com.apple.keyboard.fnState -bool true
