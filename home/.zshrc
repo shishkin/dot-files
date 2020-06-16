@@ -20,6 +20,7 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 # Aliases
 alias e=$EDITOR
 alias vim=nvim
+alias ll='ls -lhA'
 alias gs='git status -s'
 alias ga='git add -A'
 alias gfm='git fetch origin master:master'
