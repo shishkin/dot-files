@@ -24,6 +24,7 @@ export LANG=en_US.UTF-8
 export EDITOR="nvim"
 export ALTERNATE_EDITOR=vi
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export HOMEBREW_CASK_OPTS="--appdir=$HOME/Applications"
 
 # Aliases
 alias e=$EDITOR
