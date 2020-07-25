@@ -8,7 +8,7 @@
 [core]
   excludesfile = /Users/serega/.gitignore
   autocrlf = input
-  pager = `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight | less
+  pager = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight | less
 [fetch]
   prune = true
 [pull]
@@ -29,4 +29,4 @@
   driver = /usr/local/bin/ansible-vault-merge -- %O %A %B %P
 
 [submodule]
-	recurse = true
+  recurse = true
