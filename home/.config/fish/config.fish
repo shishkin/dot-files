@@ -52,4 +52,7 @@ eval "$(pyenv virtualenv-init -)"
 if status is-interactive
     # Commands to run in interactive sessions can go here
     starship init fish | source
+
+    [ -f /opt/homebrew/share/autojump/autojump.fish ];
+        and source /opt/homebrew/share/autojump/autojump.fish
 end
