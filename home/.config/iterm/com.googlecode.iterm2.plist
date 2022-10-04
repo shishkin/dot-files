@@ -4,6 +4,8 @@
 <dict>
 	<key>AlternateMouseScroll</key>
 	<true/>
+	<key>BootstrapDaemon</key>
+	<false/>
 	<key>Default Bookmark Guid</key>
 	<string>909E79A2-157F-4108-A37E-97E8E714B4BE</string>
 	<key>HapticFeedbackForEsc</key>
@@ -264,6 +266,8 @@
 			<integer>80</integer>
 			<key>Command</key>
 			<string></string>
+			<key>Cursor Boost</key>
+			<real>0.0</real>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -807,7 +811,7 @@
 				<real>0.0</real>
 			</dict>
 			<key>Minimum Contrast</key>
-			<real>0.24263908959537572</real>
+			<real>0.39768880208333335</real>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
@@ -859,6 +863,8 @@
 			<key>Show Status Bar</key>
 			<false/>
 			<key>Silence Bell</key>
+			<true/>
+			<key>Smart Cursor Color</key>
 			<true/>
 			<key>Space</key>
 			<integer>-1</integer>
@@ -979,6 +985,8 @@
 			<true/>
 			<key>Use Bright Bold</key>
 			<true/>
+			<key>Use Cursor Guide</key>
+			<false/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
@@ -998,6 +1006,8 @@
 	<key>OpenArrangementAtStartup</key>
 	<false/>
 	<key>OpenNoWindowsAtStartup</key>
+	<false/>
+	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
 	<key>PointerActions</key>
 	<dict>
@@ -1032,6 +1042,8 @@
 			<string>kNextWindowPointerAction</string>
 		</dict>
 	</dict>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>SoundForEsc</key>
