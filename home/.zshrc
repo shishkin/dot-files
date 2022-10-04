@@ -4,11 +4,13 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 export NVM_DIR=$HOME/.nvm
 
-plugins=(git osx brew sdk)
+plugins=(git osx brew sdk yarn aws docker docker-compose)
+
+fpath+=~/.zfunc
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH=$HOME/bin:$HOME/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:$HOME/.dotnet/tools:$HOME/go/bin:$HOME/.cargo/bin:$HOME/.yarn/bin:/opt/homebrew/share/git-core/contrib/diff-highlight:/usr/local/anaconda3/bin:/usr/X11/bin:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:/opt/homebrew/opt/python/libexec/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:$HOME/.dotnet/tools:$HOME/go/bin:$HOME/.cargo/bin:$HOME/.yarn/bin:/opt/homebrew/share/git-core/contrib/diff-highlight:$PATH
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -29,8 +31,8 @@ alias ga='git add -A'
 alias gfm='git fetch origin main:main'
 alias gfd='git fetch origin develop:develop'
 
-source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+alias docker=podman
+export DOCKER_HOST="unix://$HOME/.local/share/containers/podman/machine/podman-machine-default/podman.sock"
 
 eval "$(fnm env)"
 
@@ -47,5 +49,6 @@ export SDKMAN_DIR="/Users/serega/.sdkman"
 [[ -s "/Users/serega/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/serega/.sdkman/bin/sdkman-init.sh"
 
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 source /Users/serega/.config/broot/launcher/bash/br
