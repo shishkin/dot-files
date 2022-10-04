@@ -31,6 +31,15 @@ alias ls='lsd'
 alias ll='ls -lhA'
 alias gs='git status -s'
 alias ga='git add -A'
+alias gba='git branch -a'
+alias gc='git commit -v'
+alias gco='git checkout'
+alias gcb='git checkout -b'
+alias gcm='git checkout main'
+alias gd='git diff'
+alias gl='git pull'
+alias glol="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias glola="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
 alias gfm='git fetch origin main:main'
 alias gfd='git fetch origin develop:develop'
 alias docker=podman
