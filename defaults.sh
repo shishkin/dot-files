@@ -2,6 +2,9 @@
 
 sudo -v
 
+# Updates
+defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+
 # Finder
 defaults write com.apple.finder AppleShowAllExtensions -bool true
 defaults write com.apple.finder AppleShowAllFiles -bool true
