@@ -31,6 +31,7 @@ alias ll='ls -lhA'
 alias gs='git status -s'
 alias ga='git add -A'
 alias gba='git branch -a'
+alias gbda='git branch --merged | egrep -v "(^\*|master|main|dev)" | xargs git branch -d'
 alias gc='git commit -v'
 alias gco='git checkout'
 alias gcb='git checkout -b'
@@ -54,4 +55,13 @@ if status is-interactive
 
     [ -f /opt/homebrew/share/autojump/autojump.fish ];
         and source /opt/homebrew/share/autojump/autojump.fish
+
+    kubectl completion fish | source
+    fnm completions --shell fish | source
+    fzf_configure_bindings --directory=\cf --processes=\cp
 end
+
+# pnpm
+set -gx PNPM_HOME "/Users/serega/Library/pnpm"
+set -gx PATH "$PNPM_HOME" $PATH
+# pnpm end
