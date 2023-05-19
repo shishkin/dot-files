@@ -22,7 +22,6 @@ set -x DOTNET_CLI_TELEMETRY_OPTOUT 1
 set -x HOMEBREW_CASK_OPTS "--appdir=$HOME/Applications"
 set -x PYTHONDONTWRITEBYTECODE 1
 set -x BAT_THEME "Solarized (dark)"
-set -x DOCKER_HOST "unix://$HOME/.local/share/containers/podman/machine/podman-machine-default/podman.sock"
 
 # Aliases
 alias e="$EDITOR"
@@ -42,7 +41,7 @@ alias glol="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset
 alias glola="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
 alias gfm='git fetch origin main:main'
 alias gfd='git fetch origin develop:develop'
-alias docker=podman
+alias k='kubectl'
 
 eval "$(fnm env)"
 
