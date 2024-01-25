@@ -3,11 +3,9 @@ set -U fish_greeting
 set -x PATH \
     $HOME/bin \
     $HOME/.local/bin \
-    /opt/homebrew/opt/python/libexec/bin \
     /opt/homebrew/bin \
     /opt/homebrew/sbin \
     /usr/local/bin \
-    $HOME/.dotnet/tools \
     $HOME/go/bin \
     $HOME/.cargo/bin \
     $HOME/.yarn/bin \
@@ -44,24 +42,14 @@ alias gfm='git fetch origin main:main'
 alias gfd='git fetch origin develop:develop'
 alias k='kubectl'
 
-eval "$(fnm env)"
-
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
 if status is-interactive
-    # Commands to run in interactive sessions can go here
+    mise activate fish | source
+
     starship init fish | source
 
-    [ -f /opt/homebrew/share/autojump/autojump.fish ];
-        and source /opt/homebrew/share/autojump/autojump.fish
-
     kubectl completion fish | source
-    fnm completions --shell fish | source
+    # fnm completions --shell fish | source
     fzf_configure_bindings --directory=\cf --processes=\cp
-end
 
-# pnpm
-set -gx PNPM_HOME "/Users/serega/Library/pnpm"
-set -gx PATH "$PNPM_HOME" $PATH
-# pnpm end
+    zoxide init fish | source
+end
