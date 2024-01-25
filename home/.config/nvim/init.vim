@@ -8,7 +8,6 @@ Plug '/usr/local/opt/fzf'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'hecal3/vim-leader-guide'
 
-Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'vim-airline/vim-airline'
