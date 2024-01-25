@@ -1,4 +1,6 @@
-#!/usr/bin/env bash -ex
+#!/usr/bin/env bash
+
+set -ex
 
 if [ command -v apt-get ] &>/dev/null; then
   if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
