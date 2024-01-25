@@ -5,38 +5,33 @@ sudo -v
 command -v brew >/dev/null 2>&1 || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew install \
-  python3 \
-  zsh \
-  tmux \
-  git \
-  neovim \
-  lsd \
   coreutils \
+  fish \
   fzf \
-  ripgrep \
-  autojump \
+  git \
+  gitui \
+  lsd \
+  logseq \
   mise \
-  wget
+  ripgrep \
+  starship \
+  wget \
+  zoxide
 
-pip3 install neovim
-
-curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
-  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-
-sudo chsh -s $(which zsh) $USER
+sudo chsh -s $(which fish) $USER
 
 brew install \
-  iterm2 \
-  google-chrome \
+  brave-browser \
+  eloston-chromium \
   firefox \
-  spectacle \
-  java
+  iterm2 \
+  orbstack \
+  onlyoffice \
+  raycast \
+  visual-studio-code
 
 brew install \
-  font-hack-nerd-font \
-  homebrew/cask-fonts/font-fira-code \
-  homebrew/cask-fonts/font-source-code-pro \
+  homebrew/cask-fonts/font-fira-code-nerd-font \
   homebrew/cask-fonts/font-open-sans \
+  homebrew/cask-fonts/font-source-code-pro \
   colindean/fonts-nonfree/font-microsoft-office

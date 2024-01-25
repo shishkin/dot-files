@@ -14,7 +14,7 @@ set -x PATH \
 
 set -x LC_ALL en_US.UTF-8
 set -x LANG en_US.UTF-8
-set -x EDITOR nvim
+set -x EDITOR code
 set -x ALTERNATE_EDITOR vi
 set -x DOTNET_CLI_TELEMETRY_OPTOUT 1
 set -x HOMEBREW_CASK_OPTS "--appdir=$HOME/Applications"
@@ -23,7 +23,6 @@ set -x BAT_THEME "Solarized (dark)"
 
 # Aliases
 alias e="$EDITOR"
-alias vim=nvim
 alias ls='lsd'
 alias ll='ls -lhA'
 alias gs='git status -s'
