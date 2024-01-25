@@ -1,0 +1,6 @@
+[tools]
+node = "lts"
+
+[settings]
+python_venv_auto_create = false
+python_compile = false

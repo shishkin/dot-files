@@ -1,0 +1,3 @@
+experimental = true
+trusted_config_paths = ['~/code']
+env_file = '.env'

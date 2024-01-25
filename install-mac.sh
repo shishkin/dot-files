@@ -15,6 +15,7 @@ brew install \
   fzf \
   ripgrep \
   autojump \
+  mise \
   wget
 
 pip3 install neovim
@@ -39,4 +40,3 @@ brew install \
   homebrew/cask-fonts/font-source-code-pro \
   homebrew/cask-fonts/font-open-sans \
   colindean/fonts-nonfree/font-microsoft-office
-
