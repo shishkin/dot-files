@@ -6,7 +6,7 @@ if [ -x "$(command -v apt-get)" ]; then
   if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
     apt-get update -y
   fi
-  apt-get install -y --no-install-recommends \
+  sudo apt-get install -y --no-install-recommends \
     fish \
     fzf \
     wget \
@@ -16,7 +16,7 @@ if [ -x "$(command -v apt-get)" ]; then
   # lsd \
 fi
 
-chsh -s $(which fish) $USER
+sudo chsh -s $(which fish) $USER
 
 curl -fsSL https://starship.rs/install.sh | sh -s -- --yes
 
