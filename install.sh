@@ -2,22 +2,24 @@
 
 set -ex
 
-if [ command -v apt-get ] &>/dev/null; then
+if [ -x "$(command -v apt-get)" ]; then
   if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
     apt-get update -y
   fi
   apt-get install -y --no-install-recommends \
     fish \
     fzf \
-    lsd \
     wget \
     zoxide
+
+  # TODO: Install lsd from another repo
+  # lsd \
 fi
 
 chsh -s $(which fish) $USER
 
-curl -sS https://starship.rs/install.sh | sh
+curl -fsSL https://starship.rs/install.sh | sh -s -- --yes
 
-curl https://mise.jdx.dev/install.sh | sh
+curl -fsSL https://mise.jdx.dev/install.sh | sh
 
 ./link.sh

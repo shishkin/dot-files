@@ -4,6 +4,6 @@ set -ex
 
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-(cd "${DIR}" && git submodule update --init --recursive)
-
-ln -fnsv $DIR/home/.[^.]* $HOME/
+# This only links files, but creates non-link directories
+# TODO: replace with recursive ln
+cp -frs $DIR/home/.[^.]* $HOME/
